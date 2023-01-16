@@ -1,0 +1,28 @@
+#body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title {
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+#selecet-area {
+  margin: 50px;
+}
+
+.alphabet {
+  font-size: 60px;
+}
+.vs {
+  font-size: 30px;
+}
+
+.checked {
+  color: blue;
+}
+.unchecked {
+  color: red;
+}

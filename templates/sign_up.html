@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="MBTI" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBTI 회원가입</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../static/js/signUp.js"></script>
+    <link rel="stylesheet" href="../static/css/signUp.css" />
+  </head>
+  <body class="no-scroll">
+    <div class="form">
+      <div class="formContainer">
+        <header>
+          <div>
+            <a href="index.html#member"
+              ><img
+                src="https://raw.githubusercontent.com/GIBeom-Cheon/hwahae_ver.2/main/img/back.png"
+                alt="backBtn"
+                class="back"
+            /></a>
+          </div>
+          <div>
+            <p>회원가입</p>
+          </div>
+          <div class="help">
+            <p>도움말</p>
+          </div>
+        </header>
+        <p class="intro">기본정보를 입력해주세요 ☺️</p>
+        <div class="loginForm boxes">
+          <div class="loginFormId">
+            <p>이메일</p>
+            <input
+              id="input-username"
+              class="id"
+              type="text"
+              placeholder="이메일 입력"
+            />
+            <p class="error">중복된 이메일이 있습니다.</p>
+          </div>
+          <div id="input-password" class="loginFormPw">
+            <p>비밀번호</p>
+            <input class="pw" type="password" placeholder="6자리 이상" />
+          </div>
+          <div id="input-password2" class="loginFormN">
+            <p>비밀번호 확인</p>
+            <input class="n" type="text" placeholder="6자리 이상" />
+            <p class="error">비밀번호가 틀렸습니다.</p>
+          </div>
+        </div>
+        <form class="law">
+          <div class="allCheck">
+            <input type="checkbox" name="all" />
+            <label for="terms" class="all">전체동의</label>
+          </div>
+          <div class="detailCheck">
+            <div class="detail1">
+              <input type="checkbox" name="summit" />
+              <label for="terms">(필수) 화해 이용약관 동의</label>
+            </div>
+            <div class="detail2">
+              <input type="checkbox" name="summit" />
+              <label for="terms">(필수) 개인정보 수집 및 이용 동의</label>
+            </div>
+            <div class="detail3">
+              <input type="checkbox" name="summit" />
+              <label for="terms"
+                ><b>(필수) 만 14세 이상 확인</b><br />
+                &emsp;&numsp;만 14세 미만 회원의 가입은 불가합니다.</label
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+      <button class="loginBtn">다음</button>
+    </div>
+  </body>
+</html>
