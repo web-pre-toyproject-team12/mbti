@@ -1,0 +1,27 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+<!-- 회원가입 버튼 -->
+<label for="input-username" style="margin-top: 10px"></label>
+<input
+  type="text"
+  class="form-control"
+  id="input-username"
+  placeholder="ID"
+  style="margin-bottom: 10px"
+/>
+<input
+  type="password"
+  class="form-control mx-sm-3"
+  id="input-password"
+  placeholder="PASSWORD"
+  aria-describedby="passwordHelpInline"
+/>
+<button type="button" class="btn btn-primary" onclick="sign_in()">
+  로그인
+</button>
+<button onclick="sign_up()">회원가입</button>
