@@ -93,7 +93,14 @@ const sign_in = () => {
   });
 };
 
-// signUpButton.addEventListener("click", sign_up);
+const goToSignUp = () => {
+  alert("회원가입 홈페이지로 갑니다.");
+  let a = new URL(window.location.href);
+  a += "sign_up";
+  window.location.href = a;
+};
+
+signUpButton.addEventListener("click", goToSignUp);
 signInButton.addEventListener("click", sign_in);
 
 // 결과 버튼
