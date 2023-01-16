@@ -1,13 +1,22 @@
 
-# -*- coding: utf-8 -*-
-from flask import Flask, render_template, jsonify, request
+import jwt, datetime, hashlib, certifi
+
+from flask import Flask, render_template, request, jsonify, url_for, redirect
 app = Flask(__name__)
-import hashlib
+
 from pymongo import MongoClient
+from datetime import datetime, timedelta
+
 import certifi
-ca = certifi.where()
-client = MongoClient('mongodb+srv://test:sparta@cluster0.ygtjgst.mongodb.net/Cluster0?retryWrites=true&w=majority', tlsCAFile=ca)
-db = client.mbti
+
+
+ca = certifi.where();
+
+client = MongoClient('mongodb+srv://test:sparta@cluster0.ygtjgst.mongodb.net/Cluster0?retryWrites=true&w=majority',
+    tlsCAFile=ca)
+db = client.dbsparta
+
+SECRET_KEY = 'SPARTA'
 
 
 
@@ -114,26 +123,7 @@ def rank1():
 
 
 ##회원가입
-@app.route('/sign_up')
-=======
-import jwt, datetime, hashlib, certifi
 
-from flask import Flask, render_template, request, jsonify, url_for, redirect
-app = Flask(__name__)
-
-from pymongo import MongoClient
-from datetime import datetime, timedelta
-
-import certifi
-
-
-ca = certifi.where();
-
-client = MongoClient('mongodb+srv://test:sparta@cluster0.ygtjgst.mongodb.net/Cluster0?retryWrites=true&w=majority',
-    tlsCAFile=ca)
-db = client.dbsparta
-
-SECRET_KEY = 'SPARTA'
 
 @app.route('/')
 def home():
